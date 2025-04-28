@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insertar Producto - Tiendita.com</title>
+    <link rel="stylesheet" href="../styles/main.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Tiendita.com</h1>
+        <p>Sistema de Control de Inventario - Insertar Producto</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <section>
+            <h2>Agregar Nuevo Producto</h2>
+
+            <form action="insertar_producto.php" method="POST">
+
+                <div>
+                    <label for="llave">Llave</label>
+                    <input type="text" id="llave" name="llave" required>
+                </div>
+
+                <div>
+                    <label for="nombre">Nombre</label>
+                    <input type="text" id="nombre" name="nombre" required>
+                </div>
+
+                <div>
+                    <label for="descripcion">Descripción</label>
+                    <textarea id="descripcion" name="descripcion" rows="4" required></textarea>
+                </div>
+
+                <div>
+                    <label for="categoria">Categoría</label>
+                    <input type="text" id="categoria" name="categoria" required>
+                </div>
+
+                <div class="form-row">
+                    <div>
+                        <label for="precio">Precio</label>
+                        <input type="number" step="0.01" id="precio" name="precio" required>
+                    </div>
+
+                    <div>
+                        <label for="costo">Costo</label>
+                        <input type="number" step="0.01" id="costo" name="costo" required>
+                    </div>
+                </div>
+
+                <div>
+                    <label for="stock">Stock</label>
+                    <input type="number" id="stock" name="stock" required>
+                </div>
+
+                <div style="align-self: center;">
+                    <button type="submit" class="submit-btn">Guardar Producto</button>
+                </div>
+
+            </form>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        &copy; 2025 Tiendita.com - Todos los derechos reservados.
+    </footer>
+
+</body>
+</html>
