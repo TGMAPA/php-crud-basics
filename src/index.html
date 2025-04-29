@@ -4,66 +4,66 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tiendita.com - Inventario</title>
-    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="./styles/main.css">
 </head>
-<body class="bg-gray-100 min-h-screen flex flex-col">
+<body class="body">
 
     <!-- Header -->
-    <header class="bg-indigo-600 text-white py-6 shadow-md">
-        <div class="container mx-auto px-4">
-            <h1 class="text-3xl font-bold">Tiendita.com</h1>
-            <p class="mt-2 text-lg">Sistema de Control de Inventario y Movimientos para el Administrador</p>
+    <header class="header">
+        <div class="container">
+            <h1 class="title">Tiendita.com</h1>
+            <p class="subtitle">Sistema de Control de Inventario y Movimientos para el Administrador</p>
         </div>
     </header>
 
     <!-- Main content -->
-    <main class="flex-grow container mx-auto px-4 py-10">
-        <section class="mb-12 text-center">
-            <h2 class="text-2xl font-semibold mb-4">Bienvenido al sistema de gestión de Tiendita.com</h2>
-            <p class="text-gray-700 max-w-2xl mx-auto">
+    <main class="main">
+        <section class="intro">
+            <h2 class="intro-title">Bienvenido al sistema de gestión de Tiendita.com</h2>
+            <p class="intro-text">
                 Administra tus productos, movimientos de inventario y genera reportes de manera fácil y eficiente. 
                 Nuestro sistema está diseñado para brindarte el control total sobre tu tienda de una forma rápida, segura y moderna.
             </p>
         </section>
 
         <!-- Menu -->
-        <section class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
-            
-            <a href="#" class="bg-white shadow-md rounded-lg p-6 hover:bg-indigo-100 transition">
-                <h3 class="text-xl font-bold text-indigo-600 mb-2">Insertar Producto</h3>
-                <p class="text-gray-600">Agrega nuevos productos a tu inventario fácilmente.</p>
-            </a>
+        <section class="menu">
+            <div class="menu-container">
+                <a href="./pages/insertar_producto.html" class="menu-item">
+                    <h3 class="menu-item-title">Insertar Producto</h3>
+                    <p class="menu-item-text">Agrega nuevos productos a tu inventario fácilmente.</p>
+                </a>
 
-            <a href="#" class="bg-white shadow-md rounded-lg p-6 hover:bg-indigo-100 transition">
-                <h3 class="text-xl font-bold text-indigo-600 mb-2">Actualizar Producto</h3>
-                <p class="text-gray-600">Modifica la información de tus productos actuales.</p>
-            </a>
+                <a href="./pages/actualizar_producto.html" class="menu-item">
+                    <h3 class="menu-item-title">Actualizar Producto</h3>
+                    <p class="menu-item-text">Modifica la información de tus productos actuales.</p>
+                </a>
 
-            <a href="#" class="bg-white shadow-md rounded-lg p-6 hover:bg-indigo-100 transition">
-                <h3 class="text-xl font-bold text-indigo-600 mb-2">Consultar Producto</h3>
-                <p class="text-gray-600">Busca y revisa el estado de tus productos.</p>
-            </a>
+                <a href="./pages/consultar_producto.html" class="menu-item">
+                    <h3 class="menu-item-title">Consultar Producto</h3>
+                    <p class="menu-item-text">Busca y revisa el estado de tus productos.</p>
+                </a>
 
-            <a href="#" class="bg-white shadow-md rounded-lg p-6 hover:bg-indigo-100 transition">
-                <h3 class="text-xl font-bold text-indigo-600 mb-2">Borrar Producto</h3>
-                <p class="text-gray-600">Elimina productos obsoletos de tu inventario.</p>
-            </a>
+                <a href="./pages/borrar_producto.html" class="menu-item">
+                    <h3 class="menu-item-title">Borrar Producto</h3>
+                    <p class="menu-item-text">Elimina productos obsoletos de tu inventario.</p>
+                </a>
 
-            <a href="#" class="bg-white shadow-md rounded-lg p-6 hover:bg-indigo-100 transition">
-                <h3 class="text-xl font-bold text-indigo-600 mb-2">Registrar Movimiento</h3>
-                <p class="text-gray-600">Agrega entradas y salidas de productos para tener un control detallado.</p>
-            </a>
+                <a href="#" class="menu-item">
+                    <h3 class="menu-item-title">Registrar Movimiento</h3>
+                    <p class="menu-item-text">Agrega entradas y salidas de productos para tener un control detallado.</p>
+                </a>
 
-            <a href="#" class="bg-white shadow-md rounded-lg p-6 hover:bg-indigo-100 transition">
-                <h3 class="text-xl font-bold text-indigo-600 mb-2">Reportes</h3>
-                <p class="text-gray-600">Genera informes de ventas, inventario y movimientos recientes.</p>
-            </a>
-
+                <a href="#" class="menu-item">
+                    <h3 class="menu-item-title">Reportes</h3>
+                    <p class="menu-item-text">Genera informes de ventas, inventario y movimientos recientes.</p>
+                </a>
+            </div>
         </section>
     </main>
 
     <!-- Footer -->
-    <footer class="bg-indigo-600 text-white text-center py-4">
+    <footer class="footer">
         <p>&copy; 2025 Tiendita.com - Todos los derechos reservados.</p>
     </footer>
 
